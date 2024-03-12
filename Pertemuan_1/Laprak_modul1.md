@@ -271,7 +271,7 @@ int main() {
 ```
 
 ### output :
-![Screenshot Output Unguided 2](output-unguided-2_darrel.png)
+![Screenshot Output Unguided 2](output-unguided-2_darrel-1.png)
 
 => Penjelasan Program
 Program ini merupakan contoh sederhana dari penggunaan class dalam C++, yang merepresentasikan objek mobil. Setiap mobil memiliki atribut seperti merek, model, tahun, dan status ketersediaan. Program ini memiliki beberapa fungsi anggota, seperti `tampilkanInfo()` untuk menampilkan informasi mobil, `sewaMobil()` untuk menyewa mobil, dan `kembalikanMobil()` untuk mengembalikan mobil. Program utama membuat dua objek mobil, menampilkan informasi mereka, menyewa salah satu mobil, mengembalikan mobil tersebut, dan kemudian menampilkan informasi mobil kembali setelah penyewaan dan pengembalian. Ini adalah contoh penggunaan class untuk mengorganisir data dan fungsionalitas terkait bersama dalam sebuah program.
@@ -318,7 +318,7 @@ int main()
 ```
 #### Output:
 
-![Screenshot Output Unguided 3](output-unguided-3_darrel.png)
+![Screenshot Output Unguided 3](output-unguided-3_darrel-1.png)
 => Penjelasan Program
 kode di atas merupakan penggunaan array dan map. Pertama kita mempunyai sebuah array yang berisi lima nama orang dengan indeks nama_122. Dengan array ini, kita dapat mencetak nama-nama tersebut dengan memanggil indeksnya satu per satu. Selanjutnya, kita menggunakan map untuk menyimpan data tentang nama makanan. Setiap data disimpan dalam pasangan key-value, di mana keynya adalah nomor indeks dan valuenya adalah nama makanan. Setelah data tersimpan dalam map, kita dapat mencetak nama makanan dengan memanggil nilai dari map menggunakan key yang telah ditetapkan sebelumnya. Ini adalah contoh penggunaan array dan map dalam C++ untuk menyimpan dan mengakses data dengan cara yang berbeda.
 
