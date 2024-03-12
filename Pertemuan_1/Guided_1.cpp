@@ -14,7 +14,6 @@ cout << "Enter two Operands : ";
 cin >> num1 >> num2;
 
 switch (op) {
-
 case '+':
 cout << "Result : " << num1+num2;
 break;
