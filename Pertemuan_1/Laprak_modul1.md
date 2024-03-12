@@ -328,7 +328,7 @@ kode di atas merupakan penggunaan array dan map. Pertama kita mempunyai sebuah a
 layaknya seperti array, map menyimpan data dalam pasangan key-value, di mana setiap elemen memiliki key yang unik dan nilai yang sesuai, ukuran dinamis yang dapat berubah seiring waktu dan dapat diakses dengan key yang berupa tipe data apa pun. sementara Array menyimpan data secara berurutan dalam memori dengan indeks numerik, sehingga elemen-elemennya diakses menggunakan indeks tersebut dan memiliki ukuran tetap yang ditentukan saat deklarasi dan hanya dapat diakses melalui indeks numerik.
 
 ## Kesimpulan
-Tipe data dalam pemrograman dibagi menjadi tiga jenis. Pertama, tipe data primitif contohnya int, float, char, dan boolean. Kedua, tipe data abstrak (ADT) yang dibentuk oleh programmer, contohnya kelas dalam OOP. Terakhir, tipe data koleksi seperti array, vector, dan map yang digunakan untuk mengelompokkan dan menyimpan data secara bersamaan. 
+Tipe data adalah pengelompokan data berdasarkan jenis data tersebut. Tipe data dibutuhkan untuk kompiler mengetahui bagaimana sebuah data akan digunakan.Tipe data dalam pemrograman dibagi menjadi tiga jenis. Pertama, tipe data primitif contohnya int, float, char, dan boolean. Kedua, tipe data abstrak yang dibentuk oleh programmer, contohnya kelas dalam OOP. Terakhir, tipe data koleksi seperti array, vector, dan map yang digunakan untuk mengelompokkan dan menyimpan data secara bersamaan. Semua itu merupakan tipe data yang bisa kita gunakan tergantung program yang ingin di jalankan.
 
 ## Referensi
 [1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
