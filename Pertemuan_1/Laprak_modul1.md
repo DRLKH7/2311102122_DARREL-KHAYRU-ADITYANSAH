@@ -180,7 +180,8 @@ int main() {
 
 ```
 ### output:
-![Screenshot Output Unguided 1](output-unguided-1_darrel.png)
+![output-unguided-1_darrel](https://github.com/DRLKH7/2311102122_DARREL-KHAYRU-ADITYANSAH/assets/162407068/f9a43e93-4215-4fe9-bae4-f389ada68e57)
+
 => penjelasan Program 
 kode diatas merupakan program sederhana dari bahasa pemrograman C++. Program ini meminta pengguna untuk memasukkan panjang dan lebar persegi panjang, lalu menghitung dan menampilkan luasnya. Selain itu, program juga meminta pengguna untuk memasukkan dua bilangan dan membandingkannya, menampilkan pesan tentang bilangan yang lebih besar atau jika keduanya sama besar. Program ini menggunakan fungsi-fungsi untuk melakukan perhitungan dan pembandingan, serta menggunakan input-output standar untuk berinteraksi dengan pengguna melalui terminal.
 
@@ -271,7 +272,7 @@ int main() {
 ```
 
 ### output :
-![Screenshot Output Unguided 2](output-unguided-2_darrel-1.png)
+![output-unguided-2_darrel](https://github.com/DRLKH7/2311102122_DARREL-KHAYRU-ADITYANSAH/assets/162407068/e95c5946-9e9e-4e98-aa32-bcbf45eee833)
 
 => Penjelasan Program
 Program ini merupakan contoh sederhana dari penggunaan class dalam C++, yang merepresentasikan objek mobil. Setiap mobil memiliki atribut seperti merek, model, tahun, dan status ketersediaan. Program ini memiliki beberapa fungsi anggota, seperti `tampilkanInfo()` untuk menampilkan informasi mobil, `sewaMobil()` untuk menyewa mobil, dan `kembalikanMobil()` untuk mengembalikan mobil. Program utama membuat dua objek mobil, menampilkan informasi mereka, menyewa salah satu mobil, mengembalikan mobil tersebut, dan kemudian menampilkan informasi mobil kembali setelah penyewaan dan pengembalian. Ini adalah contoh penggunaan class untuk mengorganisir data dan fungsionalitas terkait bersama dalam sebuah program.
@@ -318,7 +319,8 @@ int main()
 ```
 #### Output:
 
-![Screenshot Output Unguided 3](output-unguided-3_darrel-1.png)
+![output-unguided-3_darrel](https://github.com/DRLKH7/2311102122_DARREL-KHAYRU-ADITYANSAH/assets/162407068/e67be6f5-e4a4-46be-a6b3-cc11a9f54a6a)
+
 => Penjelasan Program
 kode di atas merupakan penggunaan array dan map. Pertama kita mempunyai sebuah array yang berisi lima nama orang dengan indeks nama_122. Dengan array ini, kita dapat mencetak nama-nama tersebut dengan memanggil indeksnya satu per satu. Selanjutnya, kita menggunakan map untuk menyimpan data tentang nama makanan. Setiap data disimpan dalam pasangan key-value, di mana keynya adalah nomor indeks dan valuenya adalah nama makanan. Setelah data tersimpan dalam map, kita dapat mencetak nama makanan dengan memanggil nilai dari map menggunakan key yang telah ditetapkan sebelumnya. Ini adalah contoh penggunaan array dan map dalam C++ untuk menyimpan dan mengakses data dengan cara yang berbeda.
 
