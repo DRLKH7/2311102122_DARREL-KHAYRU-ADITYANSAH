@@ -816,7 +816,7 @@ int main() {
 
 ### output :
 ![Screenshot Output Unguided 2](unguided_2_1_linkedlidt.png)
-![Screenshot Output Unguided 2](unguided_2_2_linkedlidt.png)
+![Screenshot Output Unguided 2](unguided_2_2_linkedlist.png)
 => Penjelasan Program
 menyediakan fungsi-fungsi untuk mengelola data dalam linked list, termasuk penambahan data di depan, di belakang, atau di tengah, penghapusan data, pengubahan data, serta menampilkan seluruh data. Dalam contoh ini, program menginisialisasi linked list dengan beberapa data produk beserta harganya. Selanjutnya, pengguna dapat memilih berbagai operasi melalui menu yang disediakan, seperti menambah, menghapus, atau mengubah data, serta menampilkan seluruh data atau keluar dari program. Operasi tambahan seperti penambahan data di posisi tertentu dan penghapusan seluruh data juga tersedia namun belum diimplementasikan dalam contoh ini.
 
