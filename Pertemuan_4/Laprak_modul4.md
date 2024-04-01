@@ -610,7 +610,7 @@ Program ini terdiri struktur data Node yang memiliki atribut data untuk nilai da
 using namespace std;
 
 struct Node {
-    string nama;
+    string nama_122; // Mengubah variabel nama menjadi nama_122
     string nim;
     Node* next;
 };
@@ -624,17 +624,17 @@ public:
         head = NULL;
     }
 
-    void tambahDepan(string nama, string nim) {
+    void tambahDepan(string nama_122, string nim) { // Mengubah variabel nama menjadi nama_122
         Node* newNode = new Node;
-        newNode->nama = nama;
+        newNode->nama_122 = nama_122; // Mengubah variabel nama menjadi nama_122
         newNode->nim = nim;
         newNode->next = head;
         head = newNode;
     }
 
-    void tambahBelakang(string nama, string nim) {
+    void tambahBelakang(string nama_122, string nim) { // Mengubah variabel nama menjadi nama_122
         Node* newNode = new Node;
-        newNode->nama = nama;
+        newNode->nama_122 = nama_122; // Mengubah variabel nama menjadi nama_122
         newNode->nim = nim;
         newNode->next = NULL;
 
@@ -650,19 +650,19 @@ public:
         temp->next = newNode;
     }
 
-    void tambahTengah(string nama, string nim, int posisi) {
+    void tambahTengah(string nama_122, string nim, int posisi) { // Mengubah variabel nama menjadi nama_122
         if (posisi <= 0) {
             cout << "Posisi harus lebih dari 0." << endl;
             return;
         }
 
         if (posisi == 1) {
-            tambahDepan(nama, nim);
+            tambahDepan(nama_122, nim); // Mengubah variabel nama menjadi nama_122
             return;
         }
 
         Node* newNode = new Node;
-        newNode->nama = nama;
+        newNode->nama_122 = nama_122; // Mengubah variabel nama menjadi nama_122
         newNode->nim = nim;
 
         Node* temp = head;
@@ -746,8 +746,8 @@ public:
     void ubahDepan(string namaLama, string namaBaru, string nimBaru) {
     Node* temp = head;
     while (temp != NULL) {
-        if (temp->nama == namaLama) {
-            temp->nama = namaBaru;
+        if (temp->nama_122 == namaLama) { // Mengubah variabel nama menjadi nama_122
+            temp->nama_122 = namaBaru; // Mengubah variabel nama menjadi nama_122
             temp->nim = nimBaru;
             return;
         }
@@ -765,8 +765,8 @@ void ubahBelakang(string namaLama, string namaBaru, string nimBaru) {
     Node* temp = head;
   
     while (temp != NULL) {
-        if (temp->nama == namaLama) {
-            temp->nama = namaBaru;
+        if (temp->nama_122 == namaLama) { // Mengubah variabel nama menjadi nama_122
+            temp->nama_122 = namaBaru; // Mengubah variabel nama menjadi nama_122
             temp->nim = nimBaru;
             return;
         }
@@ -791,7 +791,7 @@ void ubahTengah(int posisi, string namaLama, string namaBaru, string nimBaru) {
     }
 
     if (temp != NULL) {
-        temp->nama = namaBaru;
+        temp->nama_122 = namaBaru; // Mengubah variabel nama menjadi nama_122
         temp->nim = nimBaru;
     } else {
         cout << "Posisi tidak valid." << endl;
@@ -810,7 +810,7 @@ void ubahTengah(int posisi, string namaLama, string namaBaru, string nimBaru) {
         cout << "|       Nama    |     NIM    |" << endl;
         cout << "==============================" << endl;
         while (temp) {
-            cout << "| " << setw(13) << left << temp->nama << " | " << setw(10) << right << temp->nim << " |" << endl;
+            cout << "| " << setw(13) << left << temp->nama_122 << " | " << setw(10) << right << temp->nim << " |" << endl; // Mengubah variabel nama menjadi nama_122
             temp = temp->next;
         }
         cout << "==============================" << endl;\
@@ -820,7 +820,7 @@ void ubahTengah(int posisi, string namaLama, string namaBaru, string nimBaru) {
 int main() {
     LinkedList I;
     int pilihan;
-    string nama, nim, namabaru;
+    string nama_122, nim, namabaru; // Mengubah variabel nama menjadi nama_122
     int posisi;
 
 
@@ -852,53 +852,53 @@ int main() {
             case 1:
                 cout << "-Tambah Depan-" << endl;
                 cout << "Masukkan Nama: ";
-                cin >> nama;
+                cin >> nama_122; // Mengubah variabel nama menjadi nama_122
                 cout << "Masukkan NIM: ";
                 cin >> nim;
-                I.tambahDepan(nama, nim);
+                I.tambahDepan(nama_122, nim); // Mengubah variabel nama menjadi nama_122
                 cout << "Data telah ditambahkan" << endl;
                 break;
             case 2:
                 cout << "-Tambah Belakang-" << endl;
                 cout << "Masukkan Nama: ";
-                cin >> nama;
+                cin >> nama_122; // Mengubah variabel nama menjadi nama_122
                 cout << "Masukkan NIM: ";
                 cin >> nim;
-                I.tambahBelakang(nama, nim);
+                I.tambahBelakang(nama_122, nim); // Mengubah variabel nama menjadi nama_122
                 cout << "Data telah ditambahkan" << endl;
                 break;
             case 3:
                 cout << "-Tambah Tengah-" << endl;
                 cout << "Masukkan Nama: ";
-                cin >> nama;
+                cin >> nama_122; // Mengubah variabel nama menjadi nama_122
                 cout << "Masukkan NIM: ";
                 cin >> nim;
                 cout << "Masukkan Posisi: ";
                 cin >> posisi;
-                I.tambahTengah(nama, nim, posisi);
+                I.tambahTengah(nama_122, nim, posisi); // Mengubah variabel nama menjadi nama_122
                 cout << "Data telah ditambahkan" << endl;
                 break;
             case 4:
                 cout << "-Ubah Depan-" << endl;
                 cout << "Masukkan Nama Lama: ";
-                cin >> nama;
+                cin >> nama_122; // Mengubah variabel nama menjadi nama_122
                 cout << "Masukkan Nama Baru: ";
                 cin >> namabaru;
                 cout << "Masukkan NIM Baru: ";
                 cin >> nim;
-                I.ubahDepan(nama, namabaru, nim);
-                cout << "Data " << nama << " telah diubah menjadi " << namabaru << endl;
+                I.ubahDepan(nama_122, namabaru, nim); // Mengubah variabel nama menjadi nama_122
+                cout << "Data " << nama_122 << " telah diubah menjadi " << namabaru << endl;
                 break;
             case 5:
                 cout << "-Ubah Belakang-" << endl;
                 cout << "Masukkan Nama Lama: ";
-                cin >> nama;
+                cin >> nama_122; // Mengubah variabel nama menjadi nama_122
                 cout << "Masukkan Nama Baru: ";
                 cin >> namabaru;
                 cout << "Masukkan NIM Baru: ";
                 cin >> nim;
-                I.ubahBelakang(nama, namabaru, nim);
-                cout << "Data " << nama << " telah diubah menjadi " << namabaru << endl;
+                I.ubahBelakang(nama_122, namabaru, nim); // Mengubah variabel nama menjadi nama_122
+                cout << "Data " << nama_122 << " telah diubah menjadi " << namabaru << endl;
                 break;
             case 6:
                 cout << "-Ubah Tengah-" << endl;
@@ -908,8 +908,8 @@ int main() {
                 cin >> namabaru;
                 cout << "Masukkan NIM Baru: ";
                 cin >> nim;
-                I.ubahTengah(posisi, nama, namabaru, nim);
-                  cout << "Data" << nama << " telah diubah menjadi " << namabaru << endl;
+                I.ubahTengah(posisi, nama_122, namabaru, nim); // Mengubah variabel nama menjadi nama_122
+                  cout << "Data" << nama_122 << " telah diubah menjadi " << namabaru << endl;
                 break;
             case 7:
                 cout << "-Hapus Depan-" << endl;
@@ -947,6 +947,7 @@ int main() {
 
     return 0;
 }
+
 ```
 ### output:
 ![Screenshot Output Unguided 1](Unguided_1-1_linkedlistcircular.png)
@@ -970,7 +971,7 @@ int main() {
 using namespace std;
 
 struct Node {
-    string nama;
+    string nama_122; // Mengubah variabel nama menjadi nama_122
     string nim;
     Node* next;
 };
@@ -984,17 +985,17 @@ public:
         head = NULL;
     }
 
-    void tambahDepan(string nama, string nim) {
+    void tambahDepan(string nama_122, string nim) { // Mengubah variabel nama menjadi nama_122
         Node* newNode = new Node;
-        newNode->nama = nama;
+        newNode->nama_122 = nama_122; // Mengubah variabel nama menjadi nama_122
         newNode->nim = nim;
         newNode->next = head;
         head = newNode;
     }
 
-    void tambahBelakang(string nama, string nim) {
+    void tambahBelakang(string nama_122, string nim) { // Mengubah variabel nama menjadi nama_122
         Node* newNode = new Node;
-        newNode->nama = nama;
+        newNode->nama_122 = nama_122; // Mengubah variabel nama menjadi nama_122
         newNode->nim = nim;
         newNode->next = NULL;
 
@@ -1010,19 +1011,19 @@ public:
         temp->next = newNode;
     }
 
-    void tambahTengah(string nama, string nim, int posisi) {
+    void tambahTengah(string nama_122, string nim, int posisi) { // Mengubah variabel nama menjadi nama_122
         if (posisi <= 0) {
             cout << "Posisi harus lebih dari 0." << endl;
             return;
         }
 
         if (posisi == 1) {
-            tambahDepan(nama, nim);
+            tambahDepan(nama_122, nim); // Mengubah variabel nama menjadi nama_122
             return;
         }
 
         Node* newNode = new Node;
-        newNode->nama = nama;
+        newNode->nama_122 = nama_122; // Mengubah variabel nama menjadi nama_122
         newNode->nim = nim;
 
         Node* temp = head;
@@ -1106,8 +1107,8 @@ public:
     void ubahDepan(string namaLama, string namaBaru, string nimBaru) {
     Node* temp = head;
     while (temp != NULL) {
-        if (temp->nama == namaLama) {
-            temp->nama = namaBaru;
+        if (temp->nama_122 == namaLama) { // Mengubah variabel nama menjadi nama_122
+            temp->nama_122 = namaBaru; // Mengubah variabel nama menjadi nama_122
             temp->nim = nimBaru;
             return;
         }
@@ -1125,8 +1126,8 @@ void ubahBelakang(string namaLama, string namaBaru, string nimBaru) {
     Node* temp = head;
   
     while (temp != NULL) {
-        if (temp->nama == namaLama) {
-            temp->nama = namaBaru;
+        if (temp->nama_122 == namaLama) { // Mengubah variabel nama menjadi nama_122
+            temp->nama_122 = namaBaru; // Mengubah variabel nama menjadi nama_122
             temp->nim = nimBaru;
             return;
         }
@@ -1151,7 +1152,7 @@ void ubahTengah(int posisi, string namaLama, string namaBaru, string nimBaru) {
     }
 
     if (temp != NULL) {
-        temp->nama = namaBaru;
+        temp->nama_122 = namaBaru; // Mengubah variabel nama menjadi nama_122
         temp->nim = nimBaru;
     } else {
         cout << "Posisi tidak valid." << endl;
@@ -1170,7 +1171,7 @@ void ubahTengah(int posisi, string namaLama, string namaBaru, string nimBaru) {
         cout << "|       Nama    |     NIM    |" << endl;
         cout << "==============================" << endl;
         while (temp) {
-            cout << "| " << setw(13) << left << temp->nama << " | " << setw(10) << right << temp->nim << " |" << endl;
+            cout << "| " << setw(13) << left << temp->nama_122 << " | " << setw(10) << right << temp->nim << " |" << endl; // Mengubah variabel nama menjadi nama_122
             temp = temp->next;
         }
         cout << "==============================" << endl;\
@@ -1180,7 +1181,7 @@ void ubahTengah(int posisi, string namaLama, string namaBaru, string nimBaru) {
 int main() {
     LinkedList I;
     int pilihan;
-    string nama, nim, namabaru;
+    string nama_122, nim, namabaru; // Mengubah variabel nama menjadi nama_122
     int posisi;
 
 
@@ -1212,53 +1213,53 @@ int main() {
             case 1:
                 cout << "-Tambah Depan-" << endl;
                 cout << "Masukkan Nama: ";
-                cin >> nama;
+                cin >> nama_122; // Mengubah variabel nama menjadi nama_122
                 cout << "Masukkan NIM: ";
                 cin >> nim;
-                I.tambahDepan(nama, nim);
+                I.tambahDepan(nama_122, nim); // Mengubah variabel nama menjadi nama_122
                 cout << "Data telah ditambahkan" << endl;
                 break;
             case 2:
                 cout << "-Tambah Belakang-" << endl;
                 cout << "Masukkan Nama: ";
-                cin >> nama;
+                cin >> nama_122; // Mengubah variabel nama menjadi nama_122
                 cout << "Masukkan NIM: ";
                 cin >> nim;
-                I.tambahBelakang(nama, nim);
+                I.tambahBelakang(nama_122, nim); // Mengubah variabel nama menjadi nama_122
                 cout << "Data telah ditambahkan" << endl;
                 break;
             case 3:
                 cout << "-Tambah Tengah-" << endl;
                 cout << "Masukkan Nama: ";
-                cin >> nama;
+                cin >> nama_122; // Mengubah variabel nama menjadi nama_122
                 cout << "Masukkan NIM: ";
                 cin >> nim;
                 cout << "Masukkan Posisi: ";
                 cin >> posisi;
-                I.tambahTengah(nama, nim, posisi);
+                I.tambahTengah(nama_122, nim, posisi); // Mengubah variabel nama menjadi nama_122
                 cout << "Data telah ditambahkan" << endl;
                 break;
             case 4:
                 cout << "-Ubah Depan-" << endl;
                 cout << "Masukkan Nama Lama: ";
-                cin >> nama;
+                cin >> nama_122; // Mengubah variabel nama menjadi nama_122
                 cout << "Masukkan Nama Baru: ";
                 cin >> namabaru;
                 cout << "Masukkan NIM Baru: ";
                 cin >> nim;
-                I.ubahDepan(nama, namabaru, nim);
-                cout << "Data " << nama << " telah diubah menjadi " << namabaru << endl;
+                I.ubahDepan(nama_122, namabaru, nim); // Mengubah variabel nama menjadi nama_122
+                cout << "Data " << nama_122 << " telah diubah menjadi " << namabaru << endl;
                 break;
             case 5:
                 cout << "-Ubah Belakang-" << endl;
                 cout << "Masukkan Nama Lama: ";
-                cin >> nama;
+                cin >> nama_122; // Mengubah variabel nama menjadi nama_122
                 cout << "Masukkan Nama Baru: ";
                 cin >> namabaru;
                 cout << "Masukkan NIM Baru: ";
                 cin >> nim;
-                I.ubahBelakang(nama, namabaru, nim);
-                cout << "Data " << nama << " telah diubah menjadi " << namabaru << endl;
+                I.ubahBelakang(nama_122, namabaru, nim); // Mengubah variabel nama menjadi nama_122
+                cout << "Data " << nama_122 << " telah diubah menjadi " << namabaru << endl;
                 break;
             case 6:
                 cout << "-Ubah Tengah-" << endl;
@@ -1268,8 +1269,8 @@ int main() {
                 cin >> namabaru;
                 cout << "Masukkan NIM Baru: ";
                 cin >> nim;
-                I.ubahTengah(posisi, nama, namabaru, nim);
-                  cout << "Data" << nama << " telah diubah menjadi " << namabaru << endl;
+                I.ubahTengah(posisi, nama_122, namabaru, nim); // Mengubah variabel nama menjadi nama_122
+                  cout << "Data" << nama_122 << " telah diubah menjadi " << namabaru << endl;
                 break;
             case 7:
                 cout << "-Hapus Depan-" << endl;
@@ -1324,7 +1325,7 @@ Program menggunakan struktur data Node untuk merepresentasikan simpul (node) dal
 using namespace std;
 
 struct Node {
-    string nama;
+    string nama_122; // Mengubah variabel nama menjadi nama_122
     string nim;
     Node* next;
 };
@@ -1338,17 +1339,17 @@ public:
         head = NULL;
     }
 
-    void tambahDepan(string nama, string nim) {
+    void tambahDepan(string nama_122, string nim) { // Mengubah variabel nama menjadi nama_122
         Node* newNode = new Node;
-        newNode->nama = nama;
+        newNode->nama_122 = nama_122; // Mengubah variabel nama menjadi nama_122
         newNode->nim = nim;
         newNode->next = head;
         head = newNode;
     }
 
-    void tambahBelakang(string nama, string nim) {
+    void tambahBelakang(string nama_122, string nim) { // Mengubah variabel nama menjadi nama_122
         Node* newNode = new Node;
-        newNode->nama = nama;
+        newNode->nama_122 = nama_122; // Mengubah variabel nama menjadi nama_122
         newNode->nim = nim;
         newNode->next = NULL;
 
@@ -1364,19 +1365,19 @@ public:
         temp->next = newNode;
     }
 
-    void tambahTengah(string nama, string nim, int posisi) {
+    void tambahTengah(string nama_122, string nim, int posisi) { // Mengubah variabel nama menjadi nama_122
         if (posisi <= 0) {
             cout << "Posisi harus lebih dari 0." << endl;
             return;
         }
 
         if (posisi == 1) {
-            tambahDepan(nama, nim);
+            tambahDepan(nama_122, nim); // Mengubah variabel nama menjadi nama_122
             return;
         }
 
         Node* newNode = new Node;
-        newNode->nama = nama;
+        newNode->nama_122 = nama_122; // Mengubah variabel nama menjadi nama_122
         newNode->nim = nim;
 
         Node* temp = head;
@@ -1460,8 +1461,8 @@ public:
     void ubahDepan(string namaLama, string namaBaru, string nimBaru) {
     Node* temp = head;
     while (temp != NULL) {
-        if (temp->nama == namaLama) {
-            temp->nama = namaBaru;
+        if (temp->nama_122 == namaLama) { // Mengubah variabel nama menjadi nama_122
+            temp->nama_122 = namaBaru; // Mengubah variabel nama menjadi nama_122
             temp->nim = nimBaru;
             return;
         }
@@ -1479,8 +1480,8 @@ void ubahBelakang(string namaLama, string namaBaru, string nimBaru) {
     Node* temp = head;
   
     while (temp != NULL) {
-        if (temp->nama == namaLama) {
-            temp->nama = namaBaru;
+        if (temp->nama_122 == namaLama) { // Mengubah variabel nama menjadi nama_122
+            temp->nama_122 = namaBaru; // Mengubah variabel nama menjadi nama_122
             temp->nim = nimBaru;
             return;
         }
@@ -1505,7 +1506,7 @@ void ubahTengah(int posisi, string namaLama, string namaBaru, string nimBaru) {
     }
 
     if (temp != NULL) {
-        temp->nama = namaBaru;
+        temp->nama_122 = namaBaru; // Mengubah variabel nama menjadi nama_122
         temp->nim = nimBaru;
     } else {
         cout << "Posisi tidak valid." << endl;
@@ -1524,7 +1525,7 @@ void ubahTengah(int posisi, string namaLama, string namaBaru, string nimBaru) {
         cout << "|       Nama    |     NIM    |" << endl;
         cout << "==============================" << endl;
         while (temp) {
-            cout << "| " << setw(13) << left << temp->nama << " | " << setw(10) << right << temp->nim << " |" << endl;
+            cout << "| " << setw(13) << left << temp->nama_122 << " | " << setw(10) << right << temp->nim << " |" << endl; // Mengubah variabel nama menjadi nama_122
             temp = temp->next;
         }
         cout << "==============================" << endl;\
@@ -1534,7 +1535,7 @@ void ubahTengah(int posisi, string namaLama, string namaBaru, string nimBaru) {
 int main() {
     LinkedList I;
     int pilihan;
-    string nama, nim, namabaru;
+    string nama_122, nim, namabaru; // Mengubah variabel nama menjadi nama_122
     int posisi;
 
 
@@ -1566,53 +1567,53 @@ int main() {
             case 1:
                 cout << "-Tambah Depan-" << endl;
                 cout << "Masukkan Nama: ";
-                cin >> nama;
+                cin >> nama_122; // Mengubah variabel nama menjadi nama_122
                 cout << "Masukkan NIM: ";
                 cin >> nim;
-                I.tambahDepan(nama, nim);
+                I.tambahDepan(nama_122, nim); // Mengubah variabel nama menjadi nama_122
                 cout << "Data telah ditambahkan" << endl;
                 break;
             case 2:
                 cout << "-Tambah Belakang-" << endl;
                 cout << "Masukkan Nama: ";
-                cin >> nama;
+                cin >> nama_122; // Mengubah variabel nama menjadi nama_122
                 cout << "Masukkan NIM: ";
                 cin >> nim;
-                I.tambahBelakang(nama, nim);
+                I.tambahBelakang(nama_122, nim); // Mengubah variabel nama menjadi nama_122
                 cout << "Data telah ditambahkan" << endl;
                 break;
             case 3:
                 cout << "-Tambah Tengah-" << endl;
                 cout << "Masukkan Nama: ";
-                cin >> nama;
+                cin >> nama_122; // Mengubah variabel nama menjadi nama_122
                 cout << "Masukkan NIM: ";
                 cin >> nim;
                 cout << "Masukkan Posisi: ";
                 cin >> posisi;
-                I.tambahTengah(nama, nim, posisi);
+                I.tambahTengah(nama_122, nim, posisi); // Mengubah variabel nama menjadi nama_122
                 cout << "Data telah ditambahkan" << endl;
                 break;
             case 4:
                 cout << "-Ubah Depan-" << endl;
                 cout << "Masukkan Nama Lama: ";
-                cin >> nama;
+                cin >> nama_122; // Mengubah variabel nama menjadi nama_122
                 cout << "Masukkan Nama Baru: ";
                 cin >> namabaru;
                 cout << "Masukkan NIM Baru: ";
                 cin >> nim;
-                I.ubahDepan(nama, namabaru, nim);
-                cout << "Data " << nama << " telah diubah menjadi " << namabaru << endl;
+                I.ubahDepan(nama_122, namabaru, nim); // Mengubah variabel nama menjadi nama_122
+                cout << "Data " << nama_122 << " telah diubah menjadi " << namabaru << endl;
                 break;
             case 5:
                 cout << "-Ubah Belakang-" << endl;
                 cout << "Masukkan Nama Lama: ";
-                cin >> nama;
+                cin >> nama_122; // Mengubah variabel nama menjadi nama_122
                 cout << "Masukkan Nama Baru: ";
                 cin >> namabaru;
                 cout << "Masukkan NIM Baru: ";
                 cin >> nim;
-                I.ubahBelakang(nama, namabaru, nim);
-                cout << "Data " << nama << " telah diubah menjadi " << namabaru << endl;
+                I.ubahBelakang(nama_122, namabaru, nim); // Mengubah variabel nama menjadi nama_122
+                cout << "Data " << nama_122 << " telah diubah menjadi " << namabaru << endl;
                 break;
             case 6:
                 cout << "-Ubah Tengah-" << endl;
@@ -1622,8 +1623,8 @@ int main() {
                 cin >> namabaru;
                 cout << "Masukkan NIM Baru: ";
                 cin >> nim;
-                I.ubahTengah(posisi, nama, namabaru, nim);
-                  cout << "Data" << nama << " telah diubah menjadi " << namabaru << endl;
+                I.ubahTengah(posisi, nama_122, namabaru, nim); // Mengubah variabel nama menjadi nama_122
+                  cout << "Data" << nama_122 << " telah diubah menjadi " << namabaru << endl;
                 break;
             case 7:
                 cout << "-Hapus Depan-" << endl;
