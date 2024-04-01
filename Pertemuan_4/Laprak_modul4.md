@@ -610,7 +610,7 @@ Program ini terdiri struktur data Node yang memiliki atribut data untuk nilai da
 using namespace std;
 
 struct Node {
-    string nama;
+    string nama_122;
     string nim;
     Node* next;
 };
@@ -624,17 +624,17 @@ public:
         head = NULL;
     }
 
-    void tambahDepan(string nama, string nim) {
+    void tambahDepan(string nama_122, string nim) {
         Node* newNode = new Node;
-        newNode->nama = nama;
+        newNode->nama = nama_122;
         newNode->nim = nim;
         newNode->next = head;
         head = newNode;
     }
 
-    void tambahBelakang(string nama, string nim) {
+    void tambahBelakang(string nama_122, string nim) {
         Node* newNode = new Node;
-        newNode->nama = nama;
+        newNode->nama = nama_122;
         newNode->nim = nim;
         newNode->next = NULL;
 
@@ -650,7 +650,7 @@ public:
         temp->next = newNode;
     }
 
-    void tambahTengah(string nama, string nim, int posisi) {
+    void tambahTengah(string nama_122, string nim, int posisi) {
         if (posisi <= 0) {
             cout << "Posisi harus lebih dari 0." << endl;
             return;
@@ -662,7 +662,7 @@ public:
         }
 
         Node* newNode = new Node;
-        newNode->nama = nama;
+        newNode->nama = nama_122;
         newNode->nim = nim;
 
         Node* temp = head;
@@ -743,20 +743,20 @@ public:
         cout << "Seluruh list telah dihapus." << endl;
     }
 
-    void ubahDepan(string namaLama, string namaBaru, string nimBaru) {
+    void ubahDepan(string namaLama_122, string namaBaru_122, string nimBaru) {
     Node* temp = head;
     while (temp != NULL) {
-        if (temp->nama == namaLama) {
-            temp->nama = namaBaru;
+        if (temp->nama == namaLama_122) {
+            temp->nama = namaBaru_122;
             temp->nim = nimBaru;
             return;
         }
         temp = temp->next;
     }
-    cout << "Data dengan nama (" << namaLama << ") tidak ditemukan." << endl;
+    cout << "Data dengan nama (" << namaLama_122 << ") tidak ditemukan." << endl;
 }
 
-void ubahBelakang(string namaLama, string namaBaru, string nimBaru) {
+void ubahBelakang(string namaLama_122, string namaBaru_122, string nimBaru) {
     if (head == NULL) {
         cout << "Linked list kosong." << endl;
         return;
@@ -765,17 +765,17 @@ void ubahBelakang(string namaLama, string namaBaru, string nimBaru) {
     Node* temp = head;
   
     while (temp != NULL) {
-        if (temp->nama == namaLama) {
-            temp->nama = namaBaru;
+        if (temp->nama == namaLama_122) {
+            temp->nama = namaBaru_122;
             temp->nim = nimBaru;
             return;
         }
         temp = temp->next;
     }
-    cout << "Data dengan nama " << namaLama << " tidak ditemukan." << endl;
+    cout << "Data dengan nama " << namaLama_122 << " tidak ditemukan." << endl;
 }
 
-void ubahTengah(int posisi, string namaLama, string namaBaru, string nimBaru) {
+void ubahTengah(int posisi, string namaLama_122, string namaBaru_122, string nimBaru) {
     if (posisi <= 0) {
         cout << "Posisi harus lebih dari 0." << endl;
         return;
@@ -791,7 +791,7 @@ void ubahTengah(int posisi, string namaLama, string namaBaru, string nimBaru) {
     }
 
     if (temp != NULL) {
-        temp->nama = namaBaru;
+        temp->nama = namaBaru_122;
         temp->nim = nimBaru;
     } else {
         cout << "Posisi tidak valid." << endl;
@@ -820,7 +820,7 @@ void ubahTengah(int posisi, string namaLama, string namaBaru, string nimBaru) {
 int main() {
     LinkedList I;
     int pilihan;
-    string nama, nim, namabaru;
+    string nama_122, nim, namabaru_122;
     int posisi;
 
 
@@ -852,64 +852,64 @@ int main() {
             case 1:
                 cout << "-Tambah Depan-" << endl;
                 cout << "Masukkan Nama: ";
-                cin >> nama;
+                cin >> nama_122;
                 cout << "Masukkan NIM: ";
                 cin >> nim;
-                I.tambahDepan(nama, nim);
+                I.tambahDepan(nama_122, nim);
                 cout << "Data telah ditambahkan" << endl;
                 break;
             case 2:
                 cout << "-Tambah Belakang-" << endl;
                 cout << "Masukkan Nama: ";
-                cin >> nama;
+                cin >> nama_122;
                 cout << "Masukkan NIM: ";
                 cin >> nim;
-                I.tambahBelakang(nama, nim);
+                I.tambahBelakang(nama_122, nim);
                 cout << "Data telah ditambahkan" << endl;
                 break;
             case 3:
                 cout << "-Tambah Tengah-" << endl;
                 cout << "Masukkan Nama: ";
-                cin >> nama;
+                cin >> nama_122;
                 cout << "Masukkan NIM: ";
                 cin >> nim;
                 cout << "Masukkan Posisi: ";
                 cin >> posisi;
-                I.tambahTengah(nama, nim, posisi);
+                I.tambahTengah(nama_122, nim, posisi);
                 cout << "Data telah ditambahkan" << endl;
                 break;
             case 4:
                 cout << "-Ubah Depan-" << endl;
                 cout << "Masukkan Nama Lama: ";
-                cin >> nama;
+                cin >> nama_122;
                 cout << "Masukkan Nama Baru: ";
-                cin >> namabaru;
+                cin >> namabaru_122;
                 cout << "Masukkan NIM Baru: ";
                 cin >> nim;
-                I.ubahDepan(nama, namabaru, nim);
-                cout << "Data " << nama << " telah diubah menjadi " << namabaru << endl;
+                I.ubahDepan(nama_122, namabaru_122, nim);
+                cout << "Data " << nama_122 << " telah diubah menjadi " << namabaru_122 << endl;
                 break;
             case 5:
                 cout << "-Ubah Belakang-" << endl;
                 cout << "Masukkan Nama Lama: ";
-                cin >> nama;
+                cin >> nama_122;
                 cout << "Masukkan Nama Baru: ";
-                cin >> namabaru;
+                cin >> namabaru_122;
                 cout << "Masukkan NIM Baru: ";
                 cin >> nim;
-                I.ubahBelakang(nama, namabaru, nim);
-                cout << "Data " << nama << " telah diubah menjadi " << namabaru << endl;
+                I.ubahBelakang(nama_122, namabaru_122, nim);
+                cout << "Data " << nama_122 << " telah diubah menjadi " << namabaru_122 << endl;
                 break;
             case 6:
                 cout << "-Ubah Tengah-" << endl;
                 cout << "Masukkan Posisi: ";
                 cin >> posisi;
                 cout << "Masukkan Nama Baru: ";
-                cin >> namabaru;
+                cin >> namabaru_122;
                 cout << "Masukkan NIM Baru: ";
                 cin >> nim;
-                I.ubahTengah(posisi, nama, namabaru, nim);
-                  cout << "Data" << nama << " telah diubah menjadi " << namabaru << endl;
+                I.ubahTengah(posisi, nama_122, namabaru_122, nim);
+                  cout << "Data" << nama_122 << " telah diubah menjadi " << namabaru_122 << endl;
                 break;
             case 7:
                 cout << "-Hapus Depan-" << endl;
@@ -970,7 +970,7 @@ int main() {
 using namespace std;
 
 struct Node {
-    string nama;
+    string nama_122;
     string nim;
     Node* next;
 };
@@ -984,17 +984,17 @@ public:
         head = NULL;
     }
 
-    void tambahDepan(string nama, string nim) {
+    void tambahDepan(string nama_122, string nim) {
         Node* newNode = new Node;
-        newNode->nama = nama;
+        newNode->nama = nama_122;
         newNode->nim = nim;
         newNode->next = head;
         head = newNode;
     }
 
-    void tambahBelakang(string nama, string nim) {
+    void tambahBelakang(string nama_122, string nim) {
         Node* newNode = new Node;
-        newNode->nama = nama;
+        newNode->nama = nama_122;
         newNode->nim = nim;
         newNode->next = NULL;
 
@@ -1010,7 +1010,7 @@ public:
         temp->next = newNode;
     }
 
-    void tambahTengah(string nama, string nim, int posisi) {
+    void tambahTengah(string nama_122, string nim, int posisi) {
         if (posisi <= 0) {
             cout << "Posisi harus lebih dari 0." << endl;
             return;
@@ -1022,7 +1022,7 @@ public:
         }
 
         Node* newNode = new Node;
-        newNode->nama = nama;
+        newNode->nama = nama_122;
         newNode->nim = nim;
 
         Node* temp = head;
@@ -1103,20 +1103,20 @@ public:
         cout << "Seluruh list telah dihapus." << endl;
     }
 
-    void ubahDepan(string namaLama, string namaBaru, string nimBaru) {
+    void ubahDepan(string namaLama_122, string namaBaru_122, string nimBaru) {
     Node* temp = head;
     while (temp != NULL) {
-        if (temp->nama == namaLama) {
-            temp->nama = namaBaru;
+        if (temp->nama == namaLama_122) {
+            temp->nama = namaBaru_122;
             temp->nim = nimBaru;
             return;
         }
         temp = temp->next;
     }
-    cout << "Data dengan nama (" << namaLama << ") tidak ditemukan." << endl;
+    cout << "Data dengan nama (" << namaLama_122 << ") tidak ditemukan." << endl;
 }
 
-void ubahBelakang(string namaLama, string namaBaru, string nimBaru) {
+void ubahBelakang(string namaLama_122, string namaBaru_122, string nimBaru) {
     if (head == NULL) {
         cout << "Linked list kosong." << endl;
         return;
@@ -1125,17 +1125,17 @@ void ubahBelakang(string namaLama, string namaBaru, string nimBaru) {
     Node* temp = head;
   
     while (temp != NULL) {
-        if (temp->nama == namaLama) {
-            temp->nama = namaBaru;
+        if (temp->nama == namaLama_122) {
+            temp->nama = namaBaru_122;
             temp->nim = nimBaru;
             return;
         }
         temp = temp->next;
     }
-    cout << "Data dengan nama " << namaLama << " tidak ditemukan." << endl;
+    cout << "Data dengan nama " << namaLama_122 << " tidak ditemukan." << endl;
 }
 
-void ubahTengah(int posisi, string namaLama, string namaBaru, string nimBaru) {
+void ubahTengah(int posisi, string namaLama_122, string namaBaru_122, string nimBaru) {
     if (posisi <= 0) {
         cout << "Posisi harus lebih dari 0." << endl;
         return;
@@ -1151,7 +1151,7 @@ void ubahTengah(int posisi, string namaLama, string namaBaru, string nimBaru) {
     }
 
     if (temp != NULL) {
-        temp->nama = namaBaru;
+        temp->nama = namaBaru_122;
         temp->nim = nimBaru;
     } else {
         cout << "Posisi tidak valid." << endl;
@@ -1180,7 +1180,7 @@ void ubahTengah(int posisi, string namaLama, string namaBaru, string nimBaru) {
 int main() {
     LinkedList I;
     int pilihan;
-    string nama, nim, namabaru;
+    string nama_122, nim, namabaru_122;
     int posisi;
 
 
@@ -1212,64 +1212,64 @@ int main() {
             case 1:
                 cout << "-Tambah Depan-" << endl;
                 cout << "Masukkan Nama: ";
-                cin >> nama;
+                cin >> nama_122;
                 cout << "Masukkan NIM: ";
                 cin >> nim;
-                I.tambahDepan(nama, nim);
+                I.tambahDepan(nama_122, nim);
                 cout << "Data telah ditambahkan" << endl;
                 break;
             case 2:
                 cout << "-Tambah Belakang-" << endl;
                 cout << "Masukkan Nama: ";
-                cin >> nama;
+                cin >> nama_122;
                 cout << "Masukkan NIM: ";
                 cin >> nim;
-                I.tambahBelakang(nama, nim);
+                I.tambahBelakang(nama_122, nim);
                 cout << "Data telah ditambahkan" << endl;
                 break;
             case 3:
                 cout << "-Tambah Tengah-" << endl;
                 cout << "Masukkan Nama: ";
-                cin >> nama;
+                cin >> nama_122;
                 cout << "Masukkan NIM: ";
                 cin >> nim;
                 cout << "Masukkan Posisi: ";
                 cin >> posisi;
-                I.tambahTengah(nama, nim, posisi);
+                I.tambahTengah(nama_122, nim, posisi);
                 cout << "Data telah ditambahkan" << endl;
                 break;
             case 4:
                 cout << "-Ubah Depan-" << endl;
                 cout << "Masukkan Nama Lama: ";
-                cin >> nama;
+                cin >> nama_122;
                 cout << "Masukkan Nama Baru: ";
-                cin >> namabaru;
+                cin >> namabaru_122;
                 cout << "Masukkan NIM Baru: ";
                 cin >> nim;
-                I.ubahDepan(nama, namabaru, nim);
-                cout << "Data " << nama << " telah diubah menjadi " << namabaru << endl;
+                I.ubahDepan(nama_122, namabaru_122, nim);
+                cout << "Data " << nama_122 << " telah diubah menjadi " << namabaru_122 << endl;
                 break;
             case 5:
                 cout << "-Ubah Belakang-" << endl;
                 cout << "Masukkan Nama Lama: ";
-                cin >> nama;
+                cin >> nama_122;
                 cout << "Masukkan Nama Baru: ";
-                cin >> namabaru;
+                cin >> namabaru_122;
                 cout << "Masukkan NIM Baru: ";
                 cin >> nim;
-                I.ubahBelakang(nama, namabaru, nim);
-                cout << "Data " << nama << " telah diubah menjadi " << namabaru << endl;
+                I.ubahBelakang(nama_122, namabaru_122, nim);
+                cout << "Data " << nama_122 << " telah diubah menjadi " << namabaru_122 << endl;
                 break;
             case 6:
                 cout << "-Ubah Tengah-" << endl;
                 cout << "Masukkan Posisi: ";
                 cin >> posisi;
                 cout << "Masukkan Nama Baru: ";
-                cin >> namabaru;
+                cin >> namabaru_122;
                 cout << "Masukkan NIM Baru: ";
                 cin >> nim;
-                I.ubahTengah(posisi, nama, namabaru, nim);
-                  cout << "Data" << nama << " telah diubah menjadi " << namabaru << endl;
+                I.ubahTengah(posisi, nama_122, namabaru_122, nim);
+                  cout << "Data" << nama_122 << " telah diubah menjadi " << namabaru_122 << endl;
                 break;
             case 7:
                 cout << "-Hapus Depan-" << endl;
@@ -1324,7 +1324,7 @@ Program menggunakan struktur data Node untuk merepresentasikan simpul (node) dal
 using namespace std;
 
 struct Node {
-    string nama;
+    string nama_122;
     string nim;
     Node* next;
 };
@@ -1338,17 +1338,17 @@ public:
         head = NULL;
     }
 
-    void tambahDepan(string nama, string nim) {
+    void tambahDepan(string nama_122, string nim) {
         Node* newNode = new Node;
-        newNode->nama = nama;
+        newNode->nama = nama_122;
         newNode->nim = nim;
         newNode->next = head;
         head = newNode;
     }
 
-    void tambahBelakang(string nama, string nim) {
+    void tambahBelakang(string nama_122, string nim) {
         Node* newNode = new Node;
-        newNode->nama = nama;
+        newNode->nama = nama_122;
         newNode->nim = nim;
         newNode->next = NULL;
 
@@ -1364,7 +1364,7 @@ public:
         temp->next = newNode;
     }
 
-    void tambahTengah(string nama, string nim, int posisi) {
+    void tambahTengah(string nama_122, string nim, int posisi) {
         if (posisi <= 0) {
             cout << "Posisi harus lebih dari 0." << endl;
             return;
@@ -1376,7 +1376,7 @@ public:
         }
 
         Node* newNode = new Node;
-        newNode->nama = nama;
+        newNode->nama = nama_122;
         newNode->nim = nim;
 
         Node* temp = head;
@@ -1457,20 +1457,20 @@ public:
         cout << "Seluruh list telah dihapus." << endl;
     }
 
-    void ubahDepan(string namaLama, string namaBaru, string nimBaru) {
+    void ubahDepan(string namaLama_122, string namaBaru_122, string nimBaru) {
     Node* temp = head;
     while (temp != NULL) {
-        if (temp->nama == namaLama) {
-            temp->nama = namaBaru;
+        if (temp->nama == namaLama_122) {
+            temp->nama = namaBaru_122;
             temp->nim = nimBaru;
             return;
         }
         temp = temp->next;
     }
-    cout << "Data dengan nama (" << namaLama << ") tidak ditemukan." << endl;
+    cout << "Data dengan nama (" << namaLama_122 << ") tidak ditemukan." << endl;
 }
 
-void ubahBelakang(string namaLama, string namaBaru, string nimBaru) {
+void ubahBelakang(string namaLama_122, string namaBaru_122, string nimBaru) {
     if (head == NULL) {
         cout << "Linked list kosong." << endl;
         return;
@@ -1479,17 +1479,17 @@ void ubahBelakang(string namaLama, string namaBaru, string nimBaru) {
     Node* temp = head;
   
     while (temp != NULL) {
-        if (temp->nama == namaLama) {
-            temp->nama = namaBaru;
+        if (temp->nama == namaLama_122) {
+            temp->nama = namaBaru_122;
             temp->nim = nimBaru;
             return;
         }
         temp = temp->next;
     }
-    cout << "Data dengan nama " << namaLama << " tidak ditemukan." << endl;
+    cout << "Data dengan nama " << namaLama_122 << " tidak ditemukan." << endl;
 }
 
-void ubahTengah(int posisi, string namaLama, string namaBaru, string nimBaru) {
+void ubahTengah(int posisi, string namaLama_122, string namaBaru_122, string nimBaru) {
     if (posisi <= 0) {
         cout << "Posisi harus lebih dari 0." << endl;
         return;
@@ -1505,7 +1505,7 @@ void ubahTengah(int posisi, string namaLama, string namaBaru, string nimBaru) {
     }
 
     if (temp != NULL) {
-        temp->nama = namaBaru;
+        temp->nama = namaBaru_122;
         temp->nim = nimBaru;
     } else {
         cout << "Posisi tidak valid." << endl;
@@ -1534,7 +1534,7 @@ void ubahTengah(int posisi, string namaLama, string namaBaru, string nimBaru) {
 int main() {
     LinkedList I;
     int pilihan;
-    string nama, nim, namabaru;
+    string nama_122, nim, namabaru_122;
     int posisi;
 
 
@@ -1566,64 +1566,64 @@ int main() {
             case 1:
                 cout << "-Tambah Depan-" << endl;
                 cout << "Masukkan Nama: ";
-                cin >> nama;
+                cin >> nama_122;
                 cout << "Masukkan NIM: ";
                 cin >> nim;
-                I.tambahDepan(nama, nim);
+                I.tambahDepan(nama_122, nim);
                 cout << "Data telah ditambahkan" << endl;
                 break;
             case 2:
                 cout << "-Tambah Belakang-" << endl;
                 cout << "Masukkan Nama: ";
-                cin >> nama;
+                cin >> nama_122;
                 cout << "Masukkan NIM: ";
                 cin >> nim;
-                I.tambahBelakang(nama, nim);
+                I.tambahBelakang(nama_122, nim);
                 cout << "Data telah ditambahkan" << endl;
                 break;
             case 3:
                 cout << "-Tambah Tengah-" << endl;
                 cout << "Masukkan Nama: ";
-                cin >> nama;
+                cin >> nama_122;
                 cout << "Masukkan NIM: ";
                 cin >> nim;
                 cout << "Masukkan Posisi: ";
                 cin >> posisi;
-                I.tambahTengah(nama, nim, posisi);
+                I.tambahTengah(nama_122, nim, posisi);
                 cout << "Data telah ditambahkan" << endl;
                 break;
             case 4:
                 cout << "-Ubah Depan-" << endl;
                 cout << "Masukkan Nama Lama: ";
-                cin >> nama;
+                cin >> nama_122;
                 cout << "Masukkan Nama Baru: ";
-                cin >> namabaru;
+                cin >> namabaru_122;
                 cout << "Masukkan NIM Baru: ";
                 cin >> nim;
-                I.ubahDepan(nama, namabaru, nim);
-                cout << "Data " << nama << " telah diubah menjadi " << namabaru << endl;
+                I.ubahDepan(nama_122, namabaru_122, nim);
+                cout << "Data " << nama_122 << " telah diubah menjadi " << namabaru_122 << endl;
                 break;
             case 5:
                 cout << "-Ubah Belakang-" << endl;
                 cout << "Masukkan Nama Lama: ";
-                cin >> nama;
+                cin >> nama_122;
                 cout << "Masukkan Nama Baru: ";
-                cin >> namabaru;
+                cin >> namabaru_122;
                 cout << "Masukkan NIM Baru: ";
                 cin >> nim;
-                I.ubahBelakang(nama, namabaru, nim);
-                cout << "Data " << nama << " telah diubah menjadi " << namabaru << endl;
+                I.ubahBelakang(nama_122, namabaru_122, nim);
+                cout << "Data " << nama_122 << " telah diubah menjadi " << namabaru_122 << endl;
                 break;
             case 6:
                 cout << "-Ubah Tengah-" << endl;
                 cout << "Masukkan Posisi: ";
                 cin >> posisi;
                 cout << "Masukkan Nama Baru: ";
-                cin >> namabaru;
+                cin >> namabaru_122;
                 cout << "Masukkan NIM Baru: ";
                 cin >> nim;
-                I.ubahTengah(posisi, nama, namabaru, nim);
-                  cout << "Data" << nama << " telah diubah menjadi " << namabaru << endl;
+                I.ubahTengah(posisi, nama_122, namabaru_122, nim);
+                  cout << "Data" << nama_122 << " telah diubah menjadi " << namabaru_122 << endl;
                 break;
             case 7:
                 cout << "-Hapus Depan-" << endl;
