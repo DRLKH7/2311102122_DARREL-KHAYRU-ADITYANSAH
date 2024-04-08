@@ -421,15 +421,12 @@ int main() {
 }
 ```
 ### output:
-<h2>SOAL A</h2>
 ![Unguided_1-1_hash table](https://github.com/DRLKH7/2311102122_DARREL-KHAYRU-ADITYANSAH/assets/162407068/def6ff48-bac9-4172-a67b-2e3c61cef9e3)
 ![unguided_1-2_hash table](https://github.com/DRLKH7/2311102122_DARREL-KHAYRU-ADITYANSAH/assets/162407068/966b5c61-39ce-4acb-aba8-99462d28cbf1)
 ![Unguided_1-3_hash table](https://github.com/DRLKH7/2311102122_DARREL-KHAYRU-ADITYANSAH/assets/162407068/b9b890d4-92ab-4a13-a1df-67c50d541888)
 
-<h2>SOAL B</h2>
 ![Unguided_2_hash table asli](https://github.com/DRLKH7/2311102122_DARREL-KHAYRU-ADITYANSAH/assets/162407068/ba6c6257-97b9-42e3-8895-9d685bc78299)
 
-<h2>SOAL C</h2>
 ![Unguided_2_hash table](https://github.com/DRLKH7/2311102122_DARREL-KHAYRU-ADITYANSAH/assets/162407068/4f066256-6028-4454-904e-3546648b81de)
 ![Unguided_3_hash table](https://github.com/DRLKH7/2311102122_DARREL-KHAYRU-ADITYANSAH/assets/162407068/30485e23-cf9e-4f4a-929d-dbbe7d1b0b97)
 ![Unguided_4_hash table](https://github.com/DRLKH7/2311102122_DARREL-KHAYRU-ADITYANSAH/assets/162407068/224a70e6-8a98-42c2-ba60-de9cce1f050c)
