@@ -422,18 +422,18 @@ int main() {
 ```
 ### output:
 <h2>SOAL A</h2>
-![Unguided_1-1_hash table](https://github.com/DRLKH7/2311102122_DARREL-KHAYRU-ADITYANSAH/assets/162407068/6404724f-fdda-4ab9-a3a1-6a1de8f587d5)
-![unguided_1-2_hash table](https://github.com/DRLKH7/2311102122_DARREL-KHAYRU-ADITYANSAH/assets/162407068/8947742d-09cc-4878-bc80-9692897d0850)
-![Unguided_1-3_hash table](https://github.com/DRLKH7/2311102122_DARREL-KHAYRU-ADITYANSAH/assets/162407068/26068a9b-0880-473e-bd83-420683f3608f)
+![Screenshoot output 1](Unguided_1-1_hash table)
+![Screenshoot output 1](Unguided_1-2_hash table)
+![Screenshoot output 1](Unguided_1-3_hash table)
 
 <h2>SOAL B<h2>
-![Unguided_2_hash table asli](https://github.com/DRLKH7/2311102122_DARREL-KHAYRU-ADITYANSAH/assets/162407068/03a09690-8746-46e3-9267-2c04f9d6a964)
+![Screenshoot output 2](Unguided_2_hash table asli.png)
 
 <h2>SOAL C<h2>
-![Unguided_2_hash table](https://github.com/DRLKH7/2311102122_DARREL-KHAYRU-ADITYANSAH/assets/162407068/81ab15f6-90b0-4063-bfea-1678b03d9674)
-![Unguided_3_hash table](https://github.com/DRLKH7/2311102122_DARREL-KHAYRU-ADITYANSAH/assets/162407068/6af51b59-8c61-4699-888f-a9f3107d39ee)
-![Unguided_4_hash table](https://github.com/DRLKH7/2311102122_DARREL-KHAYRU-ADITYANSAH/assets/162407068/53a77475-2a23-4a64-8a49-1b206683424a)
-![Unguided_5_hash table](https://github.com/DRLKH7/2311102122_DARREL-KHAYRU-ADITYANSAH/assets/162407068/40dced6e-787f-46f5-ae59-784919369d3e)
+![Screenshoot output 3](Unguided_2_hash table.png)
+![Screenshoot output 3](Unguided_3_hash table.png)
+![Screenshoot output 3](Unguided_4_hash table.png)
+![Screenshoot output 3](Unguided_5_hash table.png)
 
 => Penjelasan Program
 Program untuk menyimpan data mahasiswa, setiap entri hash table memiliki vektor yang menyimpan mahasiswa. Fungsi hash sederhana digunakan untuk menghitung indeks berdasarkan NIM mahasiswa. Program menyediakan menu interaktif untuk menambah, menghapus, dan mencari data mahasiswa berdasarkan NIM atau rentang nilai. Loop utama dalam main menjalankan program hingga pengguna memilih untuk keluar.
