@@ -949,13 +949,13 @@ int main() {
 }
 ```
 ### output:
-![Screenshot Output Unguided 1](Unguided_1-1_linkedlistcircular.png)
-![Screenshot Output Unguided 1](Unguided_1-2_linkedlistcircular.png)
-![Screenshot Output Unguided 1](Unguided_1-3_linkedlistcircular.png)
-![Screenshot Output Unguided 1](Unguided_1-4_linkedlistcircular.png)
-![Screenshot Output Unguided 1](Unguided_1-5_linkedlistcircular.png)
-![Screenshot Output Unguided 1](Unguided_1-6_linkedlistcircular.png)
-![Screenshot Output Unguided 1](Unguided_1-7_linkedlistcircular.png)
+![Unguided_1-1_linkedlistcircular](https://github.com/DRLKH7/2311102122_DARREL-KHAYRU-ADITYANSAH/assets/162407068/761c6733-458a-4334-a206-80ad75143fd9)
+![Unguided_1-2_linkedlistcircular](https://github.com/DRLKH7/2311102122_DARREL-KHAYRU-ADITYANSAH/assets/162407068/bc462cd5-3573-4bf8-932e-f92c072ff91b)
+![Unguided_1-3_linkedlistcircular](https://github.com/DRLKH7/2311102122_DARREL-KHAYRU-ADITYANSAH/assets/162407068/b0e9737d-f070-4137-8223-585886f3fa13)
+![Unguided_1-4_linkedlistcircular](https://github.com/DRLKH7/2311102122_DARREL-KHAYRU-ADITYANSAH/assets/162407068/307f1398-0643-4cc0-a1bf-b4b526d1535c)
+![Unguided_1-5_linkedlistcircular](https://github.com/DRLKH7/2311102122_DARREL-KHAYRU-ADITYANSAH/assets/162407068/5befeb67-f2c5-4032-8bf4-ce22825e1b55)
+![Unguided_1-6_linkedlistcircular](https://github.com/DRLKH7/2311102122_DARREL-KHAYRU-ADITYANSAH/assets/162407068/eacf35a3-9ff1-40c7-a81d-5fc43e9ec869)
+![Unguided_1-7_linkedlistcircular](https://github.com/DRLKH7/2311102122_DARREL-KHAYRU-ADITYANSAH/assets/162407068/9041c9fe-6c01-4813-ae80-37d918a5e040)
 => Penjelasan Program
  Program melakukan operasi dasar seperti menambah, menghapus, dan memperbarui data mahasiswa. Struktur data linked list digunakan untuk menyimpan informasi setiap mahasiswa dalam simpul (node) yang terdiri dari nama dan NIM. Setiap operasi yang dilakukan, seperti penambahan atau penghapusan, memberikan feedback kepada pengguna apakah operasi berhasil atau tidak. Program juga memvalidasi input pengguna untuk memastikan operasi yang dilakukan sesuai dengan aturan yang ditetapkan.
 
