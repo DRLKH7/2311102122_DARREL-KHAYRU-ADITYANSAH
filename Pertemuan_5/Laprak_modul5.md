@@ -422,18 +422,18 @@ int main() {
 ```
 ### output:
 <h2>SOAL A</h2>
-![alt text](<Unguided_1-1_hash table.png>)
-![alt text](<unguided_1-2_hash table.png>)
-![alt text](<Unguided_1-3_hash table.png>) 
+![Screenshot Output Unguided 1-1](<Unguided_1-1_hash table.png>)
+![Screenshot Output Unguided 1-2](<unguided_1-2_hash table.png>)
+![Screenshot Output Unguided 1-3](<Unguided_1-3_hash table.png>) 
 
 <h2>SOAL B<h2>
-![alt text](<Unguided_2_hash table asli.png>)
+![Screenshot Output Unguided 2](<Unguided_2_hash table asli.png>)
 
 <h2>SOAL C<h2>
-![alt text](<Unguided_2_hash table.png>)
-![alt text](<Unguided_3_hash table.png>) 
-![alt text](<Unguided_4_hash table.png>)
-![alt text](<Unguided_5_hash table.png>)
+![Screenshot Output Unguided 3-1](<Unguided_2_hash table.png>)
+![Screenshot Output Unguided 3-2](<Unguided_3_hash table.png>) 
+![Screenshot Output Unguided 3-3](<Unguided_4_hash table.png>)
+![Screenshot Output Unguided 3-4](<Unguided_5_hash table.png>)
 
 => Penjelasan Program
 Program untuk menyimpan data mahasiswa, setiap entri hash table memiliki vektor yang menyimpan mahasiswa. Fungsi hash sederhana digunakan untuk menghitung indeks berdasarkan NIM mahasiswa. Program menyediakan menu interaktif untuk menambah, menghapus, dan mencari data mahasiswa berdasarkan NIM atau rentang nilai. Loop utama dalam main menjalankan program hingga pengguna memilih untuk keluar.
