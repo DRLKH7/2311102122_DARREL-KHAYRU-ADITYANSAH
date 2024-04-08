@@ -421,15 +421,15 @@ int main() {
 }
 ```
 ### output:
-<h2>SOAL A</h2>
+
 ![Screenshoot output 1](Unguided_1-1_hash table)
 ![Screenshoot output 1](Unguided_1-2_hash table)
 ![Screenshoot output 1](Unguided_1-3_hash table)
 
-<h2>SOAL B<h2>
+
 ![Screenshoot output 2](Unguided_2_hash table asli.png)
 
-<h2>SOAL C<h2>
+
 ![Screenshoot output 3](Unguided_2_hash table.png)
 ![Screenshoot output 3](Unguided_3_hash table.png)
 ![Screenshoot output 3](Unguided_4_hash table.png)
